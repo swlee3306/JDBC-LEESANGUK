@@ -141,26 +141,28 @@ public class AddressBook {
 			
 			int i = 0;
 			
-			String sql2 = "";
-			
-			while(rs.last()){	
+			while(true){	
 				
 				if(i == 2){
 					break;
 				}
 				
+				rs.last();
+				
 				String id = rs.getString("id");
 				
-				sql2 = "DELETE FROM addressbook WHERE id ="+id+";";
+				String sql2 = "DELETE FROM addressbook WHERE id ="+id+";";
+				
+				st.execute(sql2);
+				
+				String sql3 = "SELECT * FROM addressbook;";
+				
+				rs = st.executeQuery(sql3);
 				
 				i++;
-				
-				
+					
 			}
-			
-			st.execute(sql2);
-			st.execute(sql2);
-			
+				
 			System.out.println("=======================================================");
 			
 			//4-1) addressbook의 모든 데이터를 Statement를 이용해서 조회하여 eclipse의 console에서 볼 수 있도록 반복문 및 System.out.printf 구현
