@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Volumes/GoogleDrive/내 드라이브/컴공 4-1학기/데이터 베이스 프로그래밍/mariadb-java-client-2.5.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
